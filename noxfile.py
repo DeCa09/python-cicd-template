@@ -13,7 +13,6 @@ def check_formatting(session):
     session.run("black", ".", "--check")
 
 
-
 @nox.session(python=["3.11"])
 def check_static_typing(session):
     session.run(
