@@ -31,7 +31,6 @@ minversion = 7.0
 addopts = "--cov"
 
 
-# pyproject.toml
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
 
