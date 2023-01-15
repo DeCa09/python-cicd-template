@@ -25,5 +25,13 @@ jobs:
         python -m pipx ensurepath
         pipx install poetry
         pipx install nox 
-    - name: Test with nox
+    - name: Testing
       run: nox --session test
+    - name: Linting
+      run: nox --session lint
+    - name: Formatting
+      run: nox --session format
+    - name: Static Type Check
+      run: nox --session static_type_check
+    
+
