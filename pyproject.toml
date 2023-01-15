@@ -15,6 +15,7 @@ flake8 = "^6.0.0"
 pytest = "^7.2.1"
 mypy = "^0.991"
 pytest-cov = "^4.0.0"
+coverage = "^7.0.5"
 
 [build-system]
 requires = ["poetry-core"]
