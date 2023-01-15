@@ -27,4 +27,4 @@ jobs:
         pipx install nox 
     - uses: actions/checkout@v2
     - name: Test with nox
-      run: nox --python=${{"{{"}} matrix.python {{"}}"}} --session test
+      run: nox --session test
