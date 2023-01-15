@@ -24,6 +24,7 @@ jobs:
         python -m pip install pipx
         python -m pipx ensurepath
         pipx install poetry
-        pip install nox 
+        pipx install nox 
+    - uses: actions/checkout@v2
     - name: Test with nox
-      run: nox --python=${{"{{"}} matrix.python {{"}}"}} -s test
+      run: nox --python=${{"{{"}} matrix.python {{"}}"}} --session test
