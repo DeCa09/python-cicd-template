@@ -28,7 +28,7 @@ jobs:
     - name: Code formatting check
       run: nox --session check_formatting
     - name: Static typing check
-      run: nox --session check_typing
+      run: nox --session check_static_typing
     - name: Linting
       run: nox --session lint
     - name: Testing
