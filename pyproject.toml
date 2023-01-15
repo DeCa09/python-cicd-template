@@ -16,6 +16,7 @@ pytest = "^7.2.1"
 mypy = "^0.991"
 pytest-cov = "^4.0.0"
 coverage = "^7.0.5"
+nox = "^2022.11.21"
 
 [build-system]
 requires = ["poetry-core"]
