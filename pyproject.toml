@@ -8,6 +8,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
@@ -16,23 +20,21 @@ nox = "^2022.11.21"
 mypy = "^0.991"
 flake8 = "^6.0.0"
 black = "^22.12.0"
+pytest-mock = "^3.10.0"
 
-[tool.poetry.group.format.dependencies]
+[tool.poetry.group.formatting.dependencies]
 black = "^22.12.0"
 
-[tool.poetry.group.lint.dependencies]
-flake8 = "^6.0.0"
-
-[tool.poetry.group.static_type_check.dependencies]
+[tool.poetry.group.static_type_checking.dependencies]
 mypy = "^0.991"
 
-[tool.poetry.group.test.dependencies]
+[tool.poetry.group.linting.dependencies]
+flake8 = "^6.0.0"
+
+[tool.poetry.group.testing.dependencies]
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+pytest-mock = "^3.10.0"
 
 [tool.black]
 line-length = 80
