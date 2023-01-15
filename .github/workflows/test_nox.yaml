@@ -25,6 +25,5 @@ jobs:
         python -m pipx ensurepath
         pipx install poetry
         pipx install nox 
-    - uses: actions/checkout@v2
     - name: Test with nox
       run: nox --session test
