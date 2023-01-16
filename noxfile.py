@@ -28,6 +28,6 @@ def lint(session):
 
 
 @nox.session(python=["3.11"])
-def test(session):
+def run_all_tests(session):
     session.run("poetry", "install", "--only", "testing", external=True)
     session.run("pytest")

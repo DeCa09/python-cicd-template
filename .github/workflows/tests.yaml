@@ -30,4 +30,4 @@ jobs:
     - name: Linting
       run: nox --session lint
     - name: Testing
-      run: nox --session test
+      run: nox --session run_all_tests
