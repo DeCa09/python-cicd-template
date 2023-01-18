@@ -8,7 +8,7 @@ def format_code(session):
 
 
 @nox.session(python=["3.11"])
-def check_formatting(session):
+def check_code_formatting(session):
     session.run("poetry", "install", "--only", "formatting", external=True)
     session.run("black", ".", "--check")
 
