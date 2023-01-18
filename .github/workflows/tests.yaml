@@ -24,7 +24,7 @@ jobs:
         pipx install poetry
         pipx install nox
     - name: Code formatting check
-      run: nox --session check_formatting
+      run: nox --session check_code_formatting
     - name: Static typing check
       run: nox --session check_static_typing
     - name: Linting
