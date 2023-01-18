@@ -24,10 +24,10 @@ jobs:
         pipx install poetry
         pipx install nox
     - name: Code formatting check
-      run: nox --force-color --session check_code_formatting
+      run: nox --session check_code_formatting --force-color
     - name: Static typing check
-      run: nox --session check_static_typing
+      run: nox --session check_static_typing --force-color
     - name: Linting
-      run: nox --session lint
+      run: nox --session lint --force-color
     - name: Testing
-      run: nox --session run_all_tests
+      run: nox --session run_all_tests --force-color
