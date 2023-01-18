@@ -2,7 +2,7 @@ import nox
 
 
 @nox.session(python=["3.11"])
-def format(session):
+def format_code(session):
     session.run("poetry", "install", "--only", "formatting", external=True)
     session.run("black", ".")
 
