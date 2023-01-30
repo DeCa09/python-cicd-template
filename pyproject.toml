@@ -37,7 +37,7 @@ pytest-cov = "^4.0.0"
 pytest-mock = "^3.10.0"
 
 [tool.black]
-line-length = 80
+line-length = 79
 target-version = ['py311']
 
 [tool.pytest.ini_options]
