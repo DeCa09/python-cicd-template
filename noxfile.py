@@ -4,12 +4,14 @@ import nox
 @nox.session(python=["3.11"])
 def format_code(session):
     session.run("poetry", "install", "--only", "formatting", external=True)
+    session.run("isort", ".")
     session.run("black", ".")
 
 
 @nox.session(python=["3.11"])
 def check_code_formatting(session):
     session.run("poetry", "install", "--only", "formatting", external=True)
+    session.run("isort", ".", "--check")
     session.run("black", ".", "--check")
 
 
