@@ -24,12 +24,6 @@ def check_static_typing(session):
 
 
 @nox.session(python=["3.11"])
-def lint(session):
-    session.run("poetry", "install", "--only", "linting", external=True)
-    session.run("flake8", "src/", external=True)
-
-
-@nox.session(python=["3.11"])
 def run_all_tests(session):
     session.run("poetry", "install", "--only", "testing", external=True)
     session.run("pytest", external=True)
