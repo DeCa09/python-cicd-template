@@ -20,13 +20,8 @@ def check_code_formatting(session):
 @nox.session(python=["3.11"])
 def check_static_typing(session):
     session.run("poetry", "install", "--only", "static_type_checking", external=True)
-    session.run("mypy", "src/", external=True)
-
-
-@nox.session(python=["3.11"])
-def lint(session):
-    session.run("poetry", "install", "--only", "linting", external=True)
-    session.run("flake8", "src/", external=True)
+    session.run("poetry", "install", "--only", "testing", external=True)
+    session.run("mypy", ".", external=True)
 
 
 @nox.session(python=["3.11"])
