@@ -9,5 +9,5 @@ from addition_package.add import add
     "summand_1, summand_2, expected_answer",
     [(3, 5, 8), (-1, 1, 0), (-1, -1, -2), (5, 0, 5)],
 )
-def test_add(summand_1, summand_2, expected_answer):
+def test_add(summand_1: float, summand_2: float, expected_answer: float) -> None:
     assert add(summand_1, summand_2) == expected_answer

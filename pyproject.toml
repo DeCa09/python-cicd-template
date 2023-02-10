@@ -44,6 +44,9 @@ target-version = ['py311']
 [tool.isort]
 profile = "black"
 
+[tool.mypy]
+strict = true
+
 [tool.pytest.ini_options]
 minversion = 7.0
 addopts = "--cov"
