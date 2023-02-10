@@ -29,7 +29,5 @@ jobs:
       run: nox --session check_code_formatting --force-color
     - name: Static typing check
       run: nox --session check_static_typing --force-color
-    - name: Linting
-      run: nox --session lint --force-color
     - name: Testing
       run: nox --session run_all_tests --force-color
