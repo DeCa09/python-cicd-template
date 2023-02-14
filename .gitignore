@@ -130,3 +130,6 @@ dmypy.json
 
 # mac directory stuff
 .DS_Store
+
+# ruff linter
+.ruff_cache/
