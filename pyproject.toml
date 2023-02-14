@@ -93,5 +93,4 @@ ignore = [
     "C901",  # mccabe code complexity analysis, not useful
     "S101",  # use of "assert" flagged by bandit, needed for tests
 ]
-# Target Python version.
 target-version = "py311"
