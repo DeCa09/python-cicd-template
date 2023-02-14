@@ -27,7 +27,7 @@ def check_static_typing(session):
 @nox.session(python=["3.11"])
 def lint(session):
     session.run("poetry", "install", "--only", "linting", external=True)
-    session.run("ruff", ".", external=True)
+    session.run("ruff", "check", ".", "--verbose", external=True)
 
 
 @nox.session(python=["3.11"])
