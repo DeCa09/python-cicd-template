@@ -1,3 +1,5 @@
+[![Tests](https://github.com/DeCa09/python-cicd-template/workflows/Tests/badge.svg)](https://github.com/DeCa09/python-cicd-template/actions?workflow=Tests)
+
 # python-cicd-template
 
 ## Prerequisites:
