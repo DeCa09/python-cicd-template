@@ -37,6 +37,6 @@ jobs:
 #      uses: codecov/codecov-action@v3
     - name: Upload Coverage Report to CodeCov
       if: always()
-      run: nox --sessions --reuse-existing-virtualenvs upload_coverage_report --force-color
+      run: nox --sessions upload_coverage_report --reuse-existing-virtualenvs --force-color
       env:
         CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
