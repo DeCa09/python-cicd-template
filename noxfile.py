@@ -34,3 +34,11 @@ def lint(session):
 def run_all_tests(session):
     session.run("poetry", "install", "--only", "testing", external=True)
     session.run("pytest", external=True)
+
+
+@nox.session(python="3.11")
+def coverage(session):
+    """Upload coverage data."""
+    session.run("poetry", "install", "--only", "dev", external=True)
+    session.run("coverage", "xml", "--fail-under=0", external=True)
+    session.run("codecov", external=True)
