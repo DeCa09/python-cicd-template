@@ -34,10 +34,4 @@ jobs:
     - name: Testing
       id: testing
       run: nox --session run_all_tests --force-color
-#    - name: Upload coverage reports to Codecov
-#      uses: codecov/codecov-action@v3
-    - name: Upload Coverage Report to CodeCov
-      if: success() || ${{ failure() && steps.testing.conclusion == 'failure' }}
-      run: nox --sessions upload_coverage_report --force-color
-      env:
-        CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+
