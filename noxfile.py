@@ -39,5 +39,5 @@ def run_all_tests(session):
 @nox.session(python="3.11")
 def upload_coverage_report(session):
     session.run("poetry", "install", "--only", "code_coverage_reporting", external=True)
-    session.run("pytest", external=True)
+    session.run("pytest", "--cov-fail-under=0", external=True)
     session.run("codecov", external=True)
