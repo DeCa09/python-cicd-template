@@ -40,5 +40,5 @@ def run_all_tests(session):
 def coverage(session):
     """Upload coverage data."""
     session.run("poetry", "install", "--only", "dev", external=True)
-    session.run("coverage", "xml", "--fail-under=0", external=True)
+    session.run("pytest", external=True)
     session.run("codecov", external=True)
