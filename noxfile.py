@@ -37,8 +37,7 @@ def run_all_tests(session):
 
 
 @nox.session(python="3.11")
-def coverage(session):
-    """Upload coverage data."""
-    session.run("poetry", "install", "--only", "dev", external=True)
+def upload_coverage_report(session):
+    session.run("poetry", "install", "--only", "code_coverage_reporting", external=True)
     session.run("pytest", external=True)
     session.run("codecov", external=True)

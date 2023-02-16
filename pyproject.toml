@@ -44,6 +44,13 @@ pytest-mock = "^3.10.0"
 ruff = "^0.0.246"
 
 
+
+[tool.poetry.group.code_coverage_reporting.dependencies]
+codecov = "^2.1.12"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+
 [tool.black]
 target-version = ["py311"]
 
