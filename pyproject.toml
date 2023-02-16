@@ -22,6 +22,7 @@ black = "^22.12.0"
 pytest-mock = "^3.10.0"
 isort = "^5.12.0"
 ruff = "^0.0.246"
+codecov = "^2.1.12"
 
 
 [tool.poetry.group.formatting.dependencies]
