@@ -32,11 +32,12 @@ jobs:
     - name: Linting
       run: nox --session lint --force-color
     - name: Testing
-      continue-on-error: true
+      id: testing
       run: nox --session run_all_tests --force-color
 #    - name: Upload coverage reports to Codecov
 #      uses: codecov/codecov-action@v3
     - name: Upload Coverage Report to CodeCov
+      if: ${{ steps.testing.conclusion }} == 'success' || ${{ steps.testing.conclusion }} == 'failure' 
       run: nox --sessions upload_coverage_report --force-color
       env:
         CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
