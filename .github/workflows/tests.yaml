@@ -33,4 +33,3 @@ jobs:
       run: nox --session lint --force-color
     - name: Testing
       run: nox --session run_all_tests --force-color
-
