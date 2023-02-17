@@ -22,6 +22,7 @@ black = "^22.12.0"
 pytest-mock = "^3.10.0"
 isort = "^5.12.0"
 ruff = "^0.0.246"
+codecov = "^2.1.12"
 
 
 [tool.poetry.group.formatting.dependencies]
@@ -42,6 +43,13 @@ pytest-mock = "^3.10.0"
 [tool.poetry.group.linting.dependencies]
 ruff = "^0.0.246"
 
+
+
+[tool.poetry.group.code_coverage_reporting.dependencies]
+codecov = "^2.1.12"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
 
 [tool.black]
 target-version = ["py311"]
