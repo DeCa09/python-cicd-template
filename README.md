@@ -9,3 +9,4 @@ On macOS, the easiest way to install it is with homebrew:
 ```
 brew install poetry
 ```
+
