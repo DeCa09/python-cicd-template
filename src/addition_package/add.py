@@ -1,5 +1,4 @@
-from typing import Union
-def add(x: Union[int, float], y: Union[int, float]) -> float:
+def add(x: int | float, y: int | float) -> float:
     """Compute and return the sum of two numbers.
 
         Examples:
