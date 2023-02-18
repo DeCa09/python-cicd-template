@@ -3,6 +3,9 @@ site_name: Addition Docs
 theme:
   name: "material"
 
+plugins:
+  - mkdocstrings
+
 nav:
   - index.md
   - tutorials.md
