@@ -2,3 +2,10 @@ site_name: Addition Docs
 
 theme:
   name: "material"
+
+nav:
+  - index.md
+  - tutorials.md
+  - how-to-guides.md
+  - reference.md
+  - explanations.md
