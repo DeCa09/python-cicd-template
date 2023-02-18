@@ -1,5 +1,12 @@
 def add(x: float, y: float) -> float:
-    """Print a greeting.
+    """Compute and return the sum of two numbers.
+
+        Examples:
+        >>> add(4.0, 2.0)
+        6.0
+        >>> add(4, 2)
+        6
+
 
     Args:
         x (float): Summand 1.
