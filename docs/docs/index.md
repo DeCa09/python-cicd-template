@@ -1,17 +1,25 @@
-# Welcome to MkDocs
+This site contains the project documentation for the
+`addition package` project that is a toy package used mainly for learning purposes.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Table Of Contents
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The documentation follows the best practice for
+project documentation as described by Daniele Procida
+in the [Diátaxis documentation framework](https://diataxis.fr/)
+and consists of four separate parts:
 
-## Project layout
+1. [Tutorials](tutorials.md)
+2. [How-To Guides](how-to-guides.md)
+3. [Reference](reference.md)
+4. [Explanation](explanation.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Quickly find what you're looking for depending on
+your use case by looking at the different pages.
+
+## Acknowledgements
+
+I want to thank my house plants for providing me with
+a negligible amount of oxygen each day. Also, I want
+to thank the sun for providing more than half of their
+nourishment free of charge.
