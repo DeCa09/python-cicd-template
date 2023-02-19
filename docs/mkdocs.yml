@@ -3,6 +3,8 @@ site_name: Addition Docs
 theme:
   name: "material"
 
+docs_dir: './docs' # default
+
 plugins:
   - mkdocstrings
 
