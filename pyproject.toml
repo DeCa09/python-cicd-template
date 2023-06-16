@@ -53,6 +53,8 @@ pytest-mock = "^3.10.0"
 
 [tool.black]
 target-version = ["py311"]
+line-length = 88
+verbose = true
 
 
 [tool.isort]
